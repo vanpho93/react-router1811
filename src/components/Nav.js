@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export class Nav extends Component {
     render() {
         return (
             <div>
-                <Link to="/">Home</Link>
-                <Link to="/topics">Topics</Link>
-                <Link to="/about">About</Link>
+                <NavLink to="/" activeStyle={{ fontWeight: 'bold' }} exact>Home</NavLink>
+                <NavLink to="/topics" activeStyle={{ fontWeight: 'bold' }}>Topics</NavLink>
+                <NavLink to="/about" activeStyle={{ fontWeight: 'bold' }}>About</NavLink>
             </div>
         );
     }
