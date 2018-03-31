@@ -10,7 +10,7 @@ export const AuthRoute = ({ component: Component, user, ...rest }) => (
             <Component {...props} />
         ) : (
             <Redirect to={{
-                pathname: '/signin',
+                pathname: '/',
             }} />
         )
     )} />
@@ -20,7 +20,7 @@ export const NotAuthRoute = ({ component: Component, user, ...rest }) => (
     <Route {...rest} render={props => (
         user ? (
             <Redirect to={{
-                pathname: '/user',
+                pathname: '/',
             }} />
         ) : (
             <Component {...props} />
