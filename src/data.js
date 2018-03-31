@@ -4,6 +4,16 @@ export class Person {
         this.name = name;
         this.age = age;
     }
+
+    static getPersonById(_id) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const person = people.find(p => p._id === _id);
+                if (!person) return reject(new Error('Cannot find person'));
+                resolve(person);
+            }, 500);
+        });
+    }
 }
 
 export const people = [
