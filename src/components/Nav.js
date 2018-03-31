@@ -8,6 +8,8 @@ export class Nav extends Component {
                 <NavLink to="/" activeStyle={{ fontWeight: 'bold' }} exact>Home</NavLink>
                 <NavLink to="/topics" activeStyle={{ fontWeight: 'bold' }}>Topics</NavLink>
                 <NavLink to="/about" activeStyle={{ fontWeight: 'bold' }}>About</NavLink>
+                <NavLink to="/user" activeStyle={{ fontWeight: 'bold' }}>User</NavLink>
+                <NavLink to="/sign-in" activeStyle={{ fontWeight: 'bold' }}>Sign in</NavLink>
             </div>
         );
     }
